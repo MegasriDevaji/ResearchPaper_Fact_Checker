@@ -1,0 +1,37 @@
+Conventional Low-Rank Adaptation (LoRA) methods
+employ a fixed rank, imposing uniform adaptation across
+transformer layers and attention heads despite their heterogeneous
+learning dynamics. This paper introduces Adaptive Rank Dynamic
+LoRA (ARD-LoRA), a novel framework that automates rank
+allocation through learnable scaling factors. These factors are
+optimized via a meta-objective balancing task performance and
+parameter efficiency, incorporating ℓ1 sparsity for minimal rank
+and Total Variation regularization for stable rank transitions.
+ARD-LoRA enables continuous, differentiable, per-head rank
+adaptation. Experiments on LLAMA-3.1-70B and PaliGemma-2
+demonstrate ARD-LoRA’s efficacy, achieving up to 99.3% of full
+fine-tuning performance with only 0.32% trainable parameters,
+outperforming strong baselines like DoRA and AdaLoRA. Furthermore, it reduces multimodal adaptation memory by 41%.
+These results establish dynamic, fine-grained rank allocation as a
+critical paradigm for efficient foundation model adaptation.
+Impact Statement—This research addresses a critical bottleneck
+in democratizing large AI systems, a market projected to exceed
+$42 billion by 2034 with trillions in potential productivity gains
+across vital sectors [1]–[4]. Our dynamic rank allocation method
+enables organizations with limited computational resources to
+efficiently fine-tune models like LLAMA-3 and PaliGemma,
+reducing adaptation costs by 41% while maintaining near-full
+performance. This supports UN Sustainable Development Goals:
+Industry Innovation (SDG9), Affordable Energy (SDG7), and
+Reduced Inequalities (SDG10) [5].
+Technologically, our optimization method sets a new standard
+for sustainable AI, aligning with EU AI Act provisions on energy
+transparency and efficiency for large models [6], [7]. Economically,
+it mitigates substantial energy waste from large model operations,
+which can cost, e.g., $700,000 daily for ChatGPT 3.5, contributing
+to carbon emissions [8], [9]. Socially, it enables safer, localized
+model specialization without excessive resource use, fostering
+equitable AI solutions. This work offers a path to balance
+technological progress with environmental responsibility.
+Index Terms—Dynamic Rank Allocation, Parameter-Efficient
+Fine-Tuning (PEFT), Low-Rank Adaptation (LoRA), MetaLearning, Resource-Efficient AI, Sustainable AI Development

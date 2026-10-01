@@ -1,0 +1,36 @@
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+env/
+fact-checker-env/
+
+# Python cache and tooling files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Local IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated local vector-store files
+data/vector_store/*
+!data/vector_store/.gitkeep
+
+# Generated reports and pipeline outputs
+results/*
+!results/.gitkeep
+

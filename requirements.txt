@@ -1,0 +1,8 @@
+google-genai
+python-dotenv
+langgraph
+sentence-transformers
+faiss-cpu
+numpy
+pymupdf
+pytest

@@ -1,0 +1,10 @@
+Low-Rank Adaptation (LoRA) is a widely adopted parameter-efficient fine-tuning
+(PEFT) method for Large Language Models (LLMs), but it still incurs notable
+overhead and suffers from parameter interference in complex datasets. While recent works decouple LoRA update matrices to exploit matrix-wise asymmetry,
+training costs remain high. We revisit LoRA from the perspective of inter-matrix
+and intra-layer parameter redundancy and propose Resource-Efficient Low-Rank
+Adaptation, EffiLoRA, a lightweight and generalizable approach for language,
+multimodal, and diffusion models. EffiLoRA employs a unified A matrix
+across all transformer layers and introduces a runtime selective B matrices update to dynamically trade-off the system resource budget and model performance.
+EffiLoRA consistently outperforms LoRA across diverse modalities, including
+commonsense reasoning, visual instruction tuning, and image generation, demonstrating improved efficiency and robustness.
